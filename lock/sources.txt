@@ -1,0 +1,4 @@
+https://sebhastian.com/mysql-error-1396/ (fix CREATE USER error)
+https://stackoverflow.com/questions/5555328/error-1396-hy000-operation-create-user-failed-for-jacklocalhost
+
+https://www.youtube.com/watch?v=JffiXdMFkOc (tutorial)
