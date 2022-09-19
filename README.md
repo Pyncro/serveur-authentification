@@ -21,6 +21,7 @@ DHCP - 172.30.0.10 et 172.30.0.100
 | --- | --- |
 | `git status` | List all *new or modified* files |
 | `git diff` | Show file differences that **haven't been** staged |
+| `git diff` | Show file differences that **haven't been** staged |
 
 ## FreeRADIUS setup
 
