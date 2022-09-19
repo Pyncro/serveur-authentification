@@ -10,12 +10,10 @@ Gateway - 172.30.0.254
 DHCP - 172.30.0.10 et 172.30.0.100
 
 
-| Système d'opération | Hoste     | Description                       |
-
-| :-------- | :------- | :-------------------------------- |
-
+|Système d'opération| Hoste         | Description                       |
+| :--------         | :-------      | :-------------------------------- |
 | `Linux Mint`      | `Virtual Box` | **Required**. Id of item to fetch |
-| `OPNsense`      | `Virtual Box` | **Required**. Id of item to fetch |
+| `OPNsense`        | `Virtual Box` | **Required**. Id of item to fetch |
 | `Windows 10`      | `actual host` | **Required**. Id of item to fetch |
 
 ## FreeRADIUS setup
