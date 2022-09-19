@@ -11,10 +11,16 @@ DHCP - 172.30.0.10 et 172.30.0.100
 
 
 |Système d'opération| Hoste         | Description                       |
-| :--------         | :-------      | :-------------------------------- |
+| --------          | -------       |--------------------------------   |
 | `Linux Mint`      | `Virtual Box` | **Required**. Id of item to fetch |
 | `OPNsense`        | `Virtual Box` | **Required**. Id of item to fetch |
 | `Windows 10`      | `actual host` | **Required**. Id of item to fetch |
+
+
+| Command | Description |
+| --- | --- |
+| `git status` | List all *new or modified* files |
+| `git diff` | Show file differences that **haven't been** staged |
 
 ## FreeRADIUS setup
 
