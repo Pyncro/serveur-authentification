@@ -77,7 +77,7 @@ Faire un test.
 Windows server / Server manager:
 ![[capture 1.PNG]]
 
-![[https://github.com/Pyncro/sisr-serveur-authentification/blob/main/lock/img/serverless-server.PNG]]
+![images][https://github.com/Pyncro/sisr-serveur-authentification/blob/main/lock/img/serverless-server.PNG]
 
 
 Free Radius:
