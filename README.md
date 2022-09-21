@@ -5,9 +5,9 @@ Contexte:Vous êtes salarié par Egnom. Cette PME est un prestataire de services
 Objective:Les PC de cette salle permettront l’accès à l’Internet via le réseau filaire du bâtiment. Cette salle n’étant pas surveillée en permanence, n’importe qui peut débrancher une des prises RJ 45 murales et relier une machine tierce au réseau du bâtiment.
 
 
-* IP - 172.30.3.15/16
-* Gateway - 172.30.0.254
-* DHCP - 172.30.0.10 et 172.30.0.100
+IP - 172.30.3.15/16
+Gateway - 172.30.0.254
+DHCP - 172.30.0.10 et 172.30.0.100
 
 
 | Système d'opération | Hoste | Edits | Site téléchargement |
@@ -15,8 +15,10 @@ Objective:Les PC de cette salle permettront l’accès à l’Internet via le r�
 | `Windows 10` | hoste actuel | Change l'adresse IP | https://www.microsoft.com/fr-fr/software-download/windows10 |
 | `Linux Mint` |Virtual Box | Accès par pont | https://www.linuxmint.com/edition.php?id=299  |
 | `OPNsense` | Virtual Box | Accès par pont | https://opnsense.org/download/ |
-
 ⚠ FAIT ATTENTION A NE PAS UTILISER PFSENSE! Beaucoup de gens échouent en utilisant cette méthode, Opensense est beaucoup plus simple.
+
+Change l'addresse ip sur votre ordinateur.
+![[ip windows.PNG]]
 
 ## FreeRADIUS install and setup
 ```
@@ -42,10 +44,11 @@ locate freeradius | grep users
 nano /etc/freeradius/3.0/users
 ```
 
+Ici c'est la partie où vous créez les comptes utilisateurs 
 ```
 admin Cleartext-Password := "1234"
 ```
-
+![[jordanclx.PNG]]
 ```
 service freeradius restart
 ```
@@ -54,6 +57,10 @@ service freeradius restart
 freeradius -CX
 ```
 
+```
+systemctl freeradius status
+```
+![[freeradius.PNG]]
 
 ## OPNsense setup
 
@@ -70,18 +77,28 @@ Vous devez modifier l’adresse IP du serveur Radius.
 
 Vous devez modifier le secret partagé pour refléter le secret partagé de votre client Radius.
 
-Faire un test.
+Faire un test.![[opnsense.PNG]]
+
+
+![[VOUCHERS.PNG]]
+
+
+![[VOUCHER CODES.PNG]]
+
+172.30.x.20:8000
+![[SUCCESS.PNG]]
 
 
 ## Failed projects:
 Windows server / Server manager:
+le gestionnaire de serveur de Windows n'a pu détecter aucun serveur.
 ![[capture 1.PNG]]
 
-![images](https://github.com/Pyncro/sisr-serveur-authentification/blob/main/lock/img/serverless-server.PN)
+![[serverless-server.PNG]]
 
 
 Free Radius:
-
+Daloradius avait des problèmes de droits d'administration.
 ![[daloradius.PNG]]
 # Sources
 https://techexpert.tips/fr/opnsense-fr/opnsense-authentification-radius-a-laide-de-freeradius/
