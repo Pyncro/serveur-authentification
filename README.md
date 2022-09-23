@@ -18,7 +18,7 @@ DHCP - 172.30.0.10 et 172.30.0.100
 ⚠ FAIT ATTENTION A NE PAS UTILISER PFSENSE! Beaucoup de gens échouent en utilisant cette méthode, Opensense est beaucoup plus simple.
 
 Change l'addresse ip sur votre ordinateur.
-![[ip windows.PNG]]
+
 ![alt text](https://github.com/Pyncro/sisr-serveur-authentification/blob/main/ip%20windows.PNG)
 
 ## FreeRADIUS install and setup
@@ -49,7 +49,7 @@ Ici c'est la partie où vous créez les comptes utilisateurs
 ```
 admin Cleartext-Password := "1234"
 ```
-![[jordanclx.PNG]]
+![alt text](https://github.com/Pyncro/sisr-serveur-authentification/blob/main/jordanclx.PNG)
 ```
 service freeradius restart
 ```
@@ -61,7 +61,7 @@ freeradius -CX
 ```
 systemctl freeradius status
 ```
-![[freeradius.PNG]]
+![alt text](https://github.com/Pyncro/sisr-serveur-authentification/blob/main/freeradius.PNG)
 
 ## OPNsense setup
 
@@ -78,29 +78,29 @@ Vous devez modifier l’adresse IP du serveur Radius.
 
 Vous devez modifier le secret partagé pour refléter le secret partagé de votre client Radius.
 
-Faire un test.![[opnsense.PNG]]
+![alt text](https://github.com/Pyncro/sisr-serveur-authentification/blob/main/opnsense.PNG)
 
 
-![[VOUCHERS.PNG]]
+![alt text](https://github.com/Pyncro/sisr-serveur-authentification/blob/main/VOUCHERS.PNG)
 
 
-![[VOUCHER CODES.PNG]]
+![alt text](https://github.com/Pyncro/sisr-serveur-authentification/blob/main/VOUCHER%20CODES.PNG)
 
 172.30.x.20:8000
-![[SUCCESS.PNG]]
+![alt text](https://github.com/Pyncro/sisr-serveur-authentification/blob/main/SUCCESS.PNG)
 
 
 ## Failed projects:
 Windows server / Server manager:
 le gestionnaire de serveur de Windows n'a pu détecter aucun serveur.
-![[capture 1.PNG]]
+![alt text](https://github.com/Pyncro/sisr-serveur-authentification/blob/main/lock/img/capture%201.PNG)
 
-![[serverless-server.PNG]]
+![alt text](https://github.com/Pyncro/sisr-serveur-authentification/blob/main/lock/img/serverless-server.PNG)
 
 
 Free Radius:
 Daloradius avait des problèmes de droits d'administration.
-![[daloradius.PNG]]
+![alt text](https://github.com/Pyncro/sisr-serveur-authentification/blob/main/lock/img/daloradius.PNG)
 # Sources
 https://techexpert.tips/fr/opnsense-fr/opnsense-authentification-radius-a-laide-de-freeradius/
 
