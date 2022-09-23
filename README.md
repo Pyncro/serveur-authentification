@@ -19,6 +19,7 @@ DHCP - 172.30.0.10 et 172.30.0.100
 
 Change l'addresse ip sur votre ordinateur.
 ![[ip windows.PNG]]
+![alt text](https://github.com/Pyncro/sisr-serveur-authentification/blob/main/ip%20windows.PNG)
 
 ## FreeRADIUS install and setup
 ```
