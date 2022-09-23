@@ -15,6 +15,8 @@ DHCP - 172.30.0.10 et 172.30.0.100
 | `Windows 10` | hoste actuel | Change l'adresse IP | https://www.microsoft.com/fr-fr/software-download/windows10 |
 | `Linux Mint` |Virtual Box | Accès par pont | https://www.linuxmint.com/edition.php?id=299  |
 | `OPNsense` | Virtual Box | Accès par pont | https://opnsense.org/download/ |
+
+
 ⚠ FAIT ATTENTION A NE PAS UTILISER PFSENSE! Beaucoup de gens échouent en utilisant cette méthode, Opensense est beaucoup plus simple.
 
 Change l'addresse ip sur votre ordinateur.
